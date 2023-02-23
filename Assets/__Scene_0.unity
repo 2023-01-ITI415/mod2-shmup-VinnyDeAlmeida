@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 1285237060}
   - component: {fileID: 1285237059}
   - component: {fileID: 1285237058}
+  - component: {fileID: 1285237061}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -398,6 +399,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285237056}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1285237061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285237056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cdb3fc8fe098b46a173ce736f03c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPerSecond: 0.1
+  levelShown: 0
 --- !u!1001 &1543738265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,9 +484,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1568835224}
-  - component: {fileID: 1568835223}
   - component: {fileID: 1568835222}
   - component: {fileID: 1568835225}
+  - component: {fileID: 1568835226}
   m_Layer: 0
   m_Name: _Hero
   m_TagString: Untagged
@@ -495,18 +510,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &1568835223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568835221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d4361978930b347833e12832279aa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1568835224
 Transform:
   m_ObjectHideFlags: 0
@@ -540,3 +543,19 @@ MonoBehaviour:
   rollMult: -45
   pitchMult: 30
   shieldLevel: 1
+--- !u!114 &1568835226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568835221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b27c8d76f7b1cd4cbfd5cb6cf08c369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundsType: 1
+  radius: 4
+  camWidth: 0
+  camHeight: 0
