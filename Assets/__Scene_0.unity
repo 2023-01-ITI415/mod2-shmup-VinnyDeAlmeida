@@ -319,6 +319,7 @@ MonoBehaviour:
   - {fileID: 299892337543608395, guid: 2e981c3a8f681ed47a85feadbb352191, type: 3}
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
+  gameRestartDelay: 2
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +623,8 @@ MonoBehaviour:
   speed: 30
   rollMult: -45
   pitchMult: 30
+  projectilePrefab: {fileID: 3542240234480114124, guid: 6482c159d7a338c4fbda097527e304c5, type: 3}
+  projectileSpeed: 40
 --- !u!114 &1568835226
 MonoBehaviour:
   m_ObjectHideFlags: 0
